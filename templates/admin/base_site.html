@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'ETHICONET admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'ETHICONET administration - Be careful! Changes made here can break things.' %}
+    <a href="/">ETHICONET</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
