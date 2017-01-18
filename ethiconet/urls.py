@@ -21,6 +21,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^homepage/', include('apps.homepage.urls')),
+    url(r'', include('apps.homepage.urls')),
+    url(r'^accounts/', include('apps.accounts.urls')),
     # url(r'^howitworks/$', views.flatpage, {'url':'/howitworks/'}, name='howitworks'),
 ]
